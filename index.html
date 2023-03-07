@@ -44,7 +44,7 @@
                 id="toggle-model"
                 camera-controls
                 auto-rotate
-                src="/assets/models/nav_jtqv.glb"
+                src="./assets/models/nav_jtqv.glb"
                 shadow-intensity="1"
                 alt="A 3D model of a shishkebab"
         >
@@ -61,7 +61,7 @@
 
     setInterval(() => {
         console.log('1')
-        toggleModel.setAttribute('src', `https://wdudtlrw78.github.io/model_viewer/assets/models/${models[j++ % 2]}`)
+        toggleModel.setAttribute('src', `./assets/models/${models[j++ % 2]}`)
     }, 3000);
 </script>
 </body>
