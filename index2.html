@@ -13,10 +13,20 @@
         padding: 0;
         box-sizing: border-box;
     }
+    #loading {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #toggle-model {
         width: 100%;
         height: 100vh;
         padding-left: 1rem;
+    }
+    #progress-bar-d {
+        display: none;
     }
     .slider {
         width: 100%;
@@ -83,6 +93,8 @@
                 </button>
                 </div>
             </div>
+            <div id="loading" slot="poster">...로딩 중</div>
+            <div id="progress-bar-d" slot="progress-bar"></div>
         </model-viewer>
     </div>
 </main>
